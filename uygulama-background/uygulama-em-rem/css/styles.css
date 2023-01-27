@@ -1,0 +1,354 @@
+@import url("buttons.css");
+@import url("base.css");
+
+html {
+  scroll-behavior: smooth;
+}
+a:hover {
+  color: green;
+  background-color: crimson;
+}
+.main-nav__item--login a:hover {
+  color: #2e4c6d;
+  background-color: #fff;
+  border: 2px solid #2e4c6d;
+}
+
+.main-nav__item::before {
+  font-size: 3.6rem;
+}
+.nav-ul {
+  display: inline-block;
+  width: calc(100% - 150px);
+  text-align: right;
+  text-decoration: none;
+  list-style: none;
+}
+.header {
+  background-color: coral;
+  margin: 0px;
+  padding: 0;
+  border: 0;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 1;
+}
+.main-nav__item {
+  font-family: "Lato", sans-serif;
+  display: inline-block;
+}
+
+#baslik {
+  background-color: #2e4c6d;
+}
+#footer {
+  background-color: coral;
+}
+
+#baslik {
+  background: linear-gradient(
+      to bottom,
+      rgba(252, 153, 124, 0.2),
+      rgba(225, 56, 5, 0.2)
+    ),
+    url(../img/bg_s.jpeg);
+  background-position: center;
+  background-size: cover;
+  height: 40vh;
+  width: 100%;
+  position: relative;
+}
+
+#baslik .content {
+  color: #fff;
+
+  background: rgba(46, 76, 109, 0.3);
+  padding: 2rem;
+  width: 60%;
+  border-radius: 1rem;
+  position: absolute;
+  top: 60%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+@media (min-width: 576px) {
+  #baslik {
+    height: 50vh;
+  }
+}
+@media (min-width: 768px) {
+  #baslik {
+    height: 60vh;
+  }
+}
+
+@media (min-width: 992px) {
+  #baslik {
+    height: 70vh;
+  }
+}
+#baslik__1 {
+  color: red;
+  padding: 40px 30px;
+  position: absolute;
+  top: 40%;
+  left: 40%;
+}
+.main-nav__item--login a {
+  color: #fff;
+  background-color: #2e4c6d;
+  padding: 0.4rem 1.6rem;
+  border-radius: 0.8rem;
+  border: 0.2rem solid #fff;
+}
+.main-nav__item:last-child {
+  display: none;
+}
+
+@media (max-width: 600px) {
+  .main-nav__item {
+    display: none;
+  }
+  .main-nav__item:last-child {
+    text-decoration: none;
+    display: block;
+  }
+}
+
+.responsive .main-nav__item {
+  display: block;
+  text-align: right;
+  margin: 1rem;
+}
+.reponsive .mian-nav {
+  display: block;
+}
+
+.responsive .main-nav__item:last-child {
+  position: absolute;
+  right: 40px;
+  top: 6px;
+}
+
+.div-ul__item {
+  display: inline-block;
+}
+.row {
+  margin-top: 4rem;
+}
+
+#how-it-works h2 {
+  color: blue;
+  font-size: 3rem;
+  font-weight: 600;
+  padding: 1rem;
+}
+.icon-box h3 {
+  color: darkmagenta;
+  font-size: 2.6rem;
+}
+.icon-box i {
+  color: crimson;
+}
+
+.features__left {
+  background: linear-gradient(
+      to bottom,
+      rgba(252, 153, 124, 0.2),
+      rgba(225, 56, 5, 0.2)
+    ),
+    url(../img/features.jpeg);
+  background-size: cover;
+  background-position: top center;
+}
+.features__right {
+  padding: 4rem;
+  background-color: #edf5f7;
+}
+
+.features__left,
+.features__right {
+  height: 35rem;
+}
+.features__right h3 {
+  font-size: 3rem;
+}
+
+#features p {
+  display: inline-block;
+  margin-top: 2rem;
+}
+.section-title {
+  text-align: center;
+}
+.plan {
+  text-align: center;
+  padding: 3rem;
+}
+
+.inner-plan {
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+  background-color: #edf5f7;
+  padding: 2.5rem 1rem;
+  border-radius: 0.5rem;
+  transition: box-shadow 0.2s;
+}
+.inner-plan:hover {
+  box-shadow: rgba(100, 100, 111, 0.5) 0px 7px 29px 0px;
+}
+/* css box shadow examples diye arama yaparak gayet kolay bulunuyor */
+/* alt yan blur blur aralıkları renk diye sıralanıyor */
+#plans button {
+  border: 0.2rem solid black;
+  border-radius: 0.5rem;
+}
+.plan__badge {
+  background-color: #fff;
+  color: #fc997c;
+  padding: 0.8rem;
+  border-radius: 0.5rem;
+}
+.recommended_plan {
+  color: #fff;
+  background: #396eb0;
+  border-radius: 0.5rem;
+  /* !important özelliği baskın yapar */
+}
+.plan__features {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+@media (min-width: 576px) {
+  .plan__features {
+    position: relative;
+    top: -20px;
+  }
+}
+.plan__badge li {
+  margin: 2rem 0;
+}
+#container_plan {
+  position: relative;
+  top: 6rem;
+}
+#container_plan__item {
+  position: relative;
+  top: -4rem;
+  /* box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px,
+      rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px,
+      rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px; */
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px,
+    rgba(0, 0, 0, 0.3) 0px 30px 60px -30px,
+    rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
+}
+#entop {
+  margin-top: 4rem;
+}
+#backtotop {
+  position: fixed;
+  bottom: 1rem;
+  right: 1rem;
+}
+#backtotop i {
+  color: #fc997c;
+  font-size: 4.5rem;
+  transition: color 0.6s;
+}
+
+.counter {
+  background: linear-gradient(to bottom, #fc997c 0%, #fc8b69 100%);
+  text-align: center;
+  padding: 5rem;
+}
+.counter h4 {
+  margin: 0;
+  color: #fff;
+}
+
+.counter__item {
+  font-weight: 500;
+  font-size: 3rem;
+  color: #fff;
+}
+.card-container {
+  padding: 1rem;
+}
+
+.card {
+  background-color: #fff;
+  border-radius: 0.5rem;
+  cursor: pointer;
+  box-shadow: 1rem 1rem 4rem rgba(52, 58, 64, 0.2);
+  /* position: relative; */
+  /* top: 0; */
+  transition: all 0.3s;
+}
+
+.card:hover {
+  /* top: -20px; */
+  transform: translateY(-10px);
+}
+.card-image {
+  max-height: 35rem;
+}
+
+.card-body {
+  padding: 3rem;
+}
+
+footer {
+  background-color: #2e4c6d;
+  padding: 3rem;
+  bottom: -10rem;
+}
+
+footer a {
+  color: #fff;
+  font-size: 1.6rem;
+  text-decoration: none;
+}
+
+footer ul {
+  margin: 0;
+  padding: 0;
+}
+footer li {
+  list-style-type: none;
+  display: inline-block;
+  margin-left: 0.5rem;
+}
+#social-links {
+  text-align: right;
+}
+
+.fab {
+  padding: 1rem;
+  font-size: 2.5rem;
+  border-radius: 50%;
+}
+
+.fab:hover {
+  opacity: 0.7;
+}
+
+.fa-facebook {
+  background-color: #3b5998;
+  color: #fff;
+}
+
+.fa-twitter {
+  background-color: #55acee;
+  color: #fff;
+}
+
+.fa-instagram {
+  background-color: #125688;
+  color: #fff;
+}
+main {
+  min-height: calc(100vh - 138px);
+}

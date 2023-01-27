@@ -1,0 +1,88 @@
+* {
+  box-sizing: border-box;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  border: 0;
+}
+
+.body {
+  margin: 0;
+  padding: 0;
+  border: 0;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+}
+
+.row::after {
+  content: "";
+  display: block;
+  clear: both;
+}
+
+/* width vermelisin yoksa sırayı kaplayanlar inline block olamaz */
+.col-3 {
+  float: left;
+  width: 33.3%;
+}
+
+.col-2 {
+  float: left;
+  width: 50%;
+}
+.col-4 {
+  float: left;
+  width: 25%;
+}
+
+.clearfix::after {
+  content: "";
+  display: block;
+  clear: both;
+}
+.container {
+  width: 100%;
+}
+
+.img-fluid {
+  width: 100%;
+}
+
+@media (min-width: 576px) {
+  .container {
+    margin: 0 auto;
+    width: 540px;
+  }
+}
+
+@media (min-width: 768px) {
+  .container {
+    margin: 0 auto;
+    width: 720px;
+  }
+}
+
+@media (min-width: 960px) {
+  .container {
+    margin: 0 auto;
+    width: 720px;
+  }
+}
+
+@media (min-width: 11140px) {
+  .container {
+    margin: 0 auto;
+    width: 720px;
+  }
+}
+
+@media (min-width: 1320px) {
+  .container {
+    margin: 0 auto;
+    width: 720px;
+  }
+}
